@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35728.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkApp2", "NetworkApp2.csproj", "{8AB543E9-87C5-4200-B7BF-041703478C37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkAppClient", "..\NetworkAppClient\NetworkAppClient.csproj", "{3DD8F8CF-AC61-4B1C-8AE7-5E725E4158A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkAppServer", "..\NetworkAppServer\NetworkAppServer.csproj", "{762B802D-8F86-4324-9C9F-23D8FA307EBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AB543E9-87C5-4200-B7BF-041703478C37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AB543E9-87C5-4200-B7BF-041703478C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AB543E9-87C5-4200-B7BF-041703478C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AB543E9-87C5-4200-B7BF-041703478C37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DD8F8CF-AC61-4B1C-8AE7-5E725E4158A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DD8F8CF-AC61-4B1C-8AE7-5E725E4158A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DD8F8CF-AC61-4B1C-8AE7-5E725E4158A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DD8F8CF-AC61-4B1C-8AE7-5E725E4158A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{762B802D-8F86-4324-9C9F-23D8FA307EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{762B802D-8F86-4324-9C9F-23D8FA307EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{762B802D-8F86-4324-9C9F-23D8FA307EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{762B802D-8F86-4324-9C9F-23D8FA307EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
