@@ -15,7 +15,7 @@ if (min_port < 1 || max_port > 65535)
     return;
 }
 
-for (int i = min_port; i <= max_port; i++)
+Parallel.For(min_port, max_port + 1, i =>
 {
     using Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
     try
@@ -28,11 +28,14 @@ for (int i = min_port; i <= max_port; i++)
         {
             Console.WriteLine($"Порт {i} закритий (таймаут)");
             socket.Close();
-            continue;
-        }
 
-        socket.EndConnect(result);
-        Console.WriteLine($"Порт {i} відкритий");
+        }
+        else
+        {
+
+            socket.EndConnect(result);
+            Console.WriteLine($"Порт {i} відкритий");
+        }
     }
     catch (SocketException)
     {
@@ -42,4 +45,4 @@ for (int i = min_port; i <= max_port; i++)
     {
         Console.WriteLine($"Виникла помилка: {ex.Message}");
     }
-}
+});
